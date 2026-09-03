@@ -4,5 +4,5 @@ int	putchar(int c)
 {
 	unsigned char byte = (unsigned char)c;
 	write(1, &byte, 1);
-	return (byte);
+	return (c);
 }
