@@ -30,8 +30,8 @@ int	main(int argc, char **argv)
 			upper_group(c);
 		else
 			lower_group(c);
-		c -= 2;
 		stat++;
+		c -= 2;
 	}
 	write(1, "\n", 1);
 	return (0);
