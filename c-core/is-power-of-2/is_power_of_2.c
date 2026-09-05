@@ -14,15 +14,3 @@ int is_power_of_2(unsigned int n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	printf("%d\n", is_power_of_2(8));
-	printf("%d\n", is_power_of_2(6));
-	printf("%d\n", is_power_of_2(0));
-	printf("%d\n", is_power_of_2(1));
-	printf("%d\n", is_power_of_2(1024));
-	return (0);
-}
-*/
