@@ -15,13 +15,8 @@ void find_n(char *str)
 
 int	main(int argc, char **argv)
 {
-	char	*str;
-
 	if (argc == 2)
-	{
-		str = argv[1];
-		find_n(str);
-	}
+		find_n(argv[1]);
 	else
 		write(1, "wrong number of arguments", 25);
 	write(1, "\n", 1);
