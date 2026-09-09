@@ -7,7 +7,7 @@ int	clamp(int v, int lo, int hi)
 	int	range;
 	
 	if (low == -2147483648)
-		range = (unsigned int)hi - (unsigned int)2147483647;
+		range = (unsigned int)hi - 2147483647;
 	else
 		range = (unsigned int)high - (unsigned int)low;
 	if (v < low || range < 0)
