@@ -7,7 +7,7 @@ int	sum_range(const int *first, const int *last)
 	sum = 0;
 	if (first != last)
 	{
-		while (first < last)
+		while (first != last)
 		{
 			sum += *first;
 			first++;
