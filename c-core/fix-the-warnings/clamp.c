@@ -5,9 +5,9 @@ int	clamp(int v, int lo, int hi)
 	int	range;
 	
 	if (lo == -2147483648)
-		range = (unsigned int)hi - 2147483647;
+		range = hi - 2147483647;
 	else
-		range = (unsigned int)hi - (unsigned int)lo;
+		range = hi - lo;
 	if (v < lo || range < 0)
 		return (lo);
 	if (v > hi)
