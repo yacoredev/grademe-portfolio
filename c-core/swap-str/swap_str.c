@@ -6,7 +6,7 @@ void	swap_str(char **a, char **b)
 {
 	char *temp;
 
-	if (!a || !b || (!*a && !*b))	return ;
+	if (!a || !b)	return ;
 	temp = *a;
 	*a = *b;
 	*b = temp;
