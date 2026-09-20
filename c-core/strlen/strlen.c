@@ -5,10 +5,7 @@ size_t	strlen(const char *s)
 	size_t	count;
 
 	count = 0;
-	while (*s)
-	{
+	while (s[count])
 		count++;
-		s++;
-	}
 	return (count);
 }
