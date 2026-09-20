@@ -11,7 +11,6 @@ void	ft_putstr(char *str)
 int	main(int argc, char **argv)
 {
 	char	*str;
-	char	*start;
 	char	*target;
 	char	*to_find;
 	char	*to_replace;
@@ -27,16 +26,17 @@ int	main(int argc, char **argv)
 			return (0);
 		}
 		target = 0;
-		start = str;
+		str = argv[1];
 		while(*str)
 		{
 			if (*str == *to_find)
 				target = str;
 			str++;
 		}
+		str = argv[1];
 		if (target)
 			*target = *to_replace;
-		ft_putstr(start);
+		ft_putstr(str);
 	}
 	else
 		write(1, "wrong number of arguments", 25);
