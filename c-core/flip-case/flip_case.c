@@ -20,12 +20,11 @@ int	main(int argc, char **argv)
 		str = argv[1];
 		while (*str)
 		{
+			c = *str;
 			if (is_upper(*str))
-				c = *str + 32;
+				c += 32;
 			else if (is_lower(*str))
-				c = *str - 32;
-			else
-				c = *str;
+				c -= 32;
 			write(1, &c, 1);
 			str++;
 		}
