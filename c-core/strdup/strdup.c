@@ -16,7 +16,7 @@ void	ft_putstr(const char *src, char *buff)
 	*buff = '\0';
 }
 
-char *strdup(const char *src)
+char *gm_strdup(const char *src)
 {
 	char	*buff;
 

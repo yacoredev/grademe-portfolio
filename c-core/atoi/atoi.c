@@ -8,7 +8,7 @@ int	is_digit(char c)
 	return (c >= '0' && c <= '9');
 }
 
-int atoi(const char *str)
+int gm_atoi(const char *str)
 {
 	int	n = 0;
 	int	s = 1;
