@@ -3,18 +3,11 @@
 int	ft_atoi(char *s)
 {
 	int	n = 0;
-	int sign = 1;
 	while (*s == ' ' || (*s >= '\t' && *s <= '\r'))
 		s++;
-	if (*s == '+' || *s == '-')
-	{
-		if (*s == '-')
-			sign = -1;
-		s++;
-	}
 	while (*s >= '0' && *s <= '9')
 		n = n * 10 + (*s++ - 48);
-	return (n * sign);
+	return (n);
 }
 
 void	ft_putnbr(int n)
