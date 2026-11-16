@@ -6,12 +6,12 @@
 size_t	free_str_array(char **arr)
 {
 	size_t i = 0;
-	if (!arr)
-	{
-		free(arr);
-		return (i);
-	}
-	while (arr[i])
+	// if (!arr)
+	// {
+	// 	free(arr);
+	// 	return (i);
+	// }
+	while (arr && arr[i])
 	{
 		free(arr[i]);
 		i++;
