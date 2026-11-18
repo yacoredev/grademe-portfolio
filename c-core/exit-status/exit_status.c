@@ -60,8 +60,7 @@ void ft_putnbr(long n)
 	c = n % 10 + 48;
 	write(1, &c, 1);
 }
-// On success print the sum of the decimal integers in argv, then a newline, and return 0.
-// On failure standard output stays empty and the return value is 1, 2 or 3.
+
 int	main(int argc, char **argv)
 {
 	int invalide;
